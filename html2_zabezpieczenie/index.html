@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Zabezpieczenia przed kradzieżą tekstu</title>
+    </head>
+    <body style="cursor: default;" oncopy="window.event.returnValue=false;" onload="window.document.body.style.visibility='visible';"  onselectstart="window.event.returnValue=false;">
+        <P>Udaję, że nie jestem tekstem.</P>
+        <P style="cursor: default;" onselectstart="alert('Tego nie możesz zaznaczyć');">Udaję, że nie jestem tekstem i nie można mnie zaznaczyć.</P>
+        <P style="cursor: default;" onselectstart="window.event.returnValue=false;">Udaję, że nie jestem tekstem i nie można mnie zaznaczyć.</P>
+        <BR>Tego nie zaznaczysz<BR>
+
+        <FORM onselectstart="window.event.cancelBubble=true;">
+            <TEXTAREA NAME="okienko"></TEXTAREA>
+        </FORM>
+        <BR>...i tego też nie.<BR>
+
+    </body>
+    <script TYPE="text/Jscript" LANGUAGE="JScript">
+        var t=' Wyt metśkic eokelnj oywtspęjucą enzka ioztsła yazimneoienp rama i  -apzrsyetz n eiapzrsyytim .oPswat łetsk trtduynd  odozctynaai , aabdrozł taywd  odookodawin.aS rkpy tamp zr yyt mpsro ąazelęt- j se tysemrtcynz.yP dotswap doz  imneąnt t ketsj wayn ,rucuoh mksyrtp ,kspoui jezs rtno yywin kejogd izłanaai( etsk tazzsfyorawyn ) ikwel jodz imneen j t wokzdeis rtno.yB<>RwUga:ap  maęiat,jż  erpezlgdąraikn eiw śyiwtealąjn eitkrócy hnzkawó , aikkl apscaijw  syętupąjychcp  oosib eazimneaiąjn  aejnd.ąD aletogp zrdes yzrfwonaei mbojeim  jksyrtpz anzcinakim& tlP;ERg&;t<RBT>nes rkpy tejtst lyokp  goąlodyw mrpyzłkdamei w t kap ortsjef roim eomeżn eis rpwazdćis ęiw p artkcynzcy  haztssowonaaihc.';
+        var dlt=t.length;
+        for (i=1;i<=dlt;i+=2) { window.document.write(t.charAt(i));  window.document.write(t.charAt(i-1));};
+    </script>
+    </body>
+</html>

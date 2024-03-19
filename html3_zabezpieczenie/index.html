@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zabezpieczenia przed kradzieżą tekstu</title>
+</head>
+<body 
+    onbeforeprint="window.document.body.style.visibility='hidden'; window.alert('Tekst chroniony prawem autorskim. Kopiowanie wymaga uzyskania zgody autora');" 
+    onafterprint="window.document.body.style.visibility='visible';" 
+    onblur="window.clipboardData.clearData(); window.scrollTo(0,0);">
+    
+    <p>Udaję, że nie jestem tekstem.</p>
+    
+    <p style="cursor: default;" onselectstart="alert('Tego nie możesz zaznaczyć');">
+        Udaję, że nie jestem tekstem i nie można mnie zaznaczyć.
+    </p>
+    
+    <p style="cursor: default;" onselectstart="window.event.returnValue=false;">
+        Udaję, że nie jestem tekstem i nie można mnie zaznaczyć.
+    </p>
+    
+    <div id="tajne" style="visibility: hidden;">Chroniony tekst</div>
+</body>
+</html>

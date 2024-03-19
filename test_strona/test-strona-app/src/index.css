@@ -1,0 +1,98 @@
+body {
+    background-color: hsl(312, 59%, 77%)
+}
+
+header h1 {
+    text-align: center;
+}
+
+.headContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.headContainer img {
+    max-width: 40%;
+    height: auto;
+}
+
+.headContainer h1 {
+    flex-grow: 1;
+    margin: 0;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+	color: white;
+    background-color: black;
+    padding: 10px;
+}
+
+.navbar-main {
+    background-color: #2C3E50;
+    padding: 10px;
+}
+
+.navbar-main ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar-main li {
+    margin-right: 20px;
+}
+
+.navbar-main a {
+    text-decoration: none;
+    color: #ECF0F1;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar-main a:hover {
+    color: #3498DB;
+}
+
+.gallery {
+    text-align: center;
+}
+
+.card {
+    background-color: hsl(312, 86%, 66%);
+    border: 1px solid hsl(0, 0%, 80%);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px hsla(0, 0%, 0%, 0.1);
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    max-width: 250px;
+    display: inline-block;
+}
+
+.card .card-image {
+    max-width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.card .card-title {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: hsl(0, 0%, 20%);
+}
+
+.card .card-text {
+    font-family: Arial, sans-serif;
+    color: hsl(0, 0%, 30%);
+}
